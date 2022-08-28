@@ -57,5 +57,8 @@ ORDER BY Bill_Date desc;
 
 select distinct Product_Id,Dep_Id,Cat_Id from Product_Catalogue;
 
-select Purchase_History.Bills_Id,Purchase_History.Customer,Purchase_History.Sale_Qty,Bill_Amount,Purchase_History.Bill_Date 
-from Purchase_History full outer join Product_Catalogue on Purchase_History.Product_Id=Product_Catalogue.Product_Id;
+CREATE TABLE table_joined AS (select Purchase_History.Bills_Id,Purchase_History.Customer,Purchase_History.Sale_Qty,Bill_Amount,Purchase_History.Bill_Date from Purchase_History left join Product_Catalogue on Purchase_History.Product_Id=Product_Catalogue.Product_Id);
+
+Delete from table_joined where (Dep_Id,Cat_Id) is null;
+Create table table_30days as (Delete from table_joined where Bill_Date>27-01-20
+
