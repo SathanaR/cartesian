@@ -8,10 +8,16 @@ ASSGNMENT 1:
 ASSIGNMENT 2:
 
 
-1)cartesian Sql 1.sql-CODE FOR FIRST PROBLEM
+1)cartesian Sql 1.sql-    CODE FOR FIRST PROBLEM
 
 
-2)cartesian Sql 2.sql-CODE FOR SECOND PROBLEM
+VEDIO--SQL question1.webm
+
+
+2)cartesian Sql 2.sql-    CODE FOR SECOND PROBLEM
+
+VEDIO--SQL question2.webm
+
 
 ASSIGNMENT 3:
 
